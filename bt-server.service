@@ -1,0 +1,13 @@
+[Unit]
+Description=The bluetooth server
+
+[Service]
+User=atelier
+WorkingDirectory=/home/atelier/
+ExecStart=/usr/bin/bt-server
+Restart=Always
+RestartSec=3
+TimeoutSec=60
+
+[Install]
+WantedBy=multi-user.target
